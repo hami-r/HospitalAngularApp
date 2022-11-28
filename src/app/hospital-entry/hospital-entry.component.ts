@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class HospitalEntryComponent {
 
+  name = ""
+  patientId = ""
+  address = ""
+  contactNo = ""
+  dateOfAppointment = ""
+  patientImage = ""
+  doctorName = ""
+
+  readValues = () => {
+    let data:any = {
+      "name":this.name,
+      "patientId":this.patientId,
+      "address":this.address,
+      "contactNo":this.contactNo,
+      "dateOfAppointment":this.dateOfAppointment,
+      "patientImage":this.patientImage,
+      "docotrName":this.doctorName
+    }
+
+    console.log(data);
+    
+  }
 }
